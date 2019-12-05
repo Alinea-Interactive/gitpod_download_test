@@ -12,9 +12,27 @@
 
     <body>
 
+        <!-- simulate existing code - download from temp folder-->
+        <form action="/download-method1.php" method="post"> 
+            <button type="submit">Method 1 - csv1.csv</button> FAILS
+        </form>
+
+        <form action="/download-method2.php" method="post">
+            <button type="submit">Method 2 - csv1.csv</button> SUCCEEDS
+        </form>
+
+        <form action="/download-method3.php" method="post">
+            <button type="submit">Method 3 - csv1.csv</button> SUCCEEDS
+        </form>
+
+        <form action="/download-method4.php" method="post">
+            <button type="submit">Method 4 - csv1.csv</button> FAILS
+        </form>        
+
+        <form action="/download-method5.php" method="post">
+            <button type="submit">Method 5 - csv1.csv</button> SUCCEEDS
+        </form>              
       <!--JavaScript at end of body for optimized loading-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </body>
   </html>
-<?php
-echo phpinfo();
